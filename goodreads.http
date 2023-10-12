@@ -1,0 +1,45 @@
+# GET all books
+GET http://localhost:3000/books/
+
+### GETsingle book 
+GET http://localhost:3000/books/1 
+
+### POST a single book
+
+POST http://localhost:3000/books 
+Content-Type: application/json
+
+{
+    "title": "The Secreat",
+    "authorId": 2,
+    "ratingCount": 10,
+    "reviewCount": 20,
+    "description": "Must read book",
+    "pages": 350,
+    "dateOfPublication": "2002-06-07",
+    "editionLanguage": "English",
+    "price": 400,
+    "onlineStores": "Flipkart"
+}
+
+### UPDATE a book
+
+PUT http://localhost:3000/books/1
+Content-Type: application/json
+
+{
+    "title": "The Secreat",
+    "authorId": 2,
+    "ratingCount": 10,
+    "reviewCount": 20,
+    "description": "Must read book",
+    "pages": 350,
+    "dateOfPublication": "2002-06-07",
+    "editionLanguage": "English",
+    "price": 400,
+    "onlineStores": "Flipkart"
+}
+
+### DELETE book API 
+
+DELETE http://localhost:3000/books/1
